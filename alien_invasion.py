@@ -48,7 +48,8 @@ def check_events(self):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit
-        elif event.type == pygame
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
 
 if __name__ == '__main__':
     # Make a game instance, and run the game.
